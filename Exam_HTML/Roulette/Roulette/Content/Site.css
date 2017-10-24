@@ -1,0 +1,224 @@
+﻿.new-player-window{
+    display: block;
+    background-color: white;
+    width: 350px;
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 35px;
+    padding: 20px;
+    border: solid black thick;
+}
+.new-player-window div {
+    margin-bottom:10px;
+}
+.modal-dialog {
+    background-color:black;
+    opacity:0.6;
+    position:fixed;
+    width:100%;
+    height:100%;
+    bottom:0;
+}
+body {
+    background-color:green;
+}
+.global-container {
+    display:flex;
+}
+.global-container .left-container {
+    padding:20px;
+}
+.global-container .right-container {
+    padding:20px;
+}
+.player, .total-money {
+    margin-bottom:10px;
+    width:320px;
+}
+.player span, .total-money span, .player label, .total-money label {
+    color:white;
+}
+.player span, .total-money span {
+    float:right;
+}
+.form-chips table {
+    color:white;
+}
+.form-chips table td {
+    padding:15px 25px 15px 0;
+}
+.form-chips input[type="number"] {
+    width:100px;
+}
+.form-chips .total-bet {
+    color:white;
+    font-size:24px;
+    padding-top:15px;
+    padding-bottom:35px;
+}
+.form-chips .total-bet input[type=button] {
+    display:block;
+    width:100%;
+    margin-top:15px;
+    background-color:brown;
+    border-radius:4px;
+    border:none;
+    padding:10px;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+.form-chips .total-bet > input[disabled] {
+    display:none;
+}
+.form-chips .chip-coin {
+    width:60px;
+    height:60px;
+    border-radius:30px;
+    color:white;
+    text-align:center;
+    line-height:50px;
+    border:solid white 5px;
+    box-sizing:border-box;
+}
+.five-grand .chip-coin {
+    background-color:red;
+}
+.one-grand .chip-coin {
+    background-color:blue;
+}
+.five-hundred .chip-coin {
+    background-color:purple;
+}
+.one-hundred .chip-coin {
+    background-color:black;
+}
+.twenty-five .chip-coin {
+    background-color:orange;
+}
+.five .chip-coin {
+    background-color:brown;
+}
+.roulette-table{
+    border:solid white 4px;
+    padding:20px;
+    display:inline-block;
+    border-top-left-radius:250px;
+    border-top-right-radius:250px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.roulette-table a{
+    text-decoration:none;
+    color:white;
+    display:inline-block;
+    width:70px;
+    height:35px;
+    text-align:center;
+    line-height:35px;
+    margin-top:3px;
+    margin-bottom:3px;
+    border-radius:17px;
+    box-sizing:border-box;
+}
+.roulette-table a.selected {
+    border:solid white 4px;
+    line-height:31px;
+    font-weight:bold;
+}
+.roulette-table a:hover, 
+.roulette-table #five-number:hover,
+.roulette-table .bottom-container .red:hover,
+.roulette-table .bottom-container .black:hover,
+.roulette-table #red:hover,
+.roulette-table #black:hover
+{
+    background-color:blue;
+    color:white;
+}
+.roulette-table .wheel-container{
+    position:relative;
+    text-align:center;
+    z-index: -1;
+}
+.roulette-table .wheel-container .hit-number {
+    position: absolute;
+    top: 82px;
+    width: 442px;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+}
+.roulette-table .wheel-container .bet-and-price {
+    position: absolute;
+    top: 189px;
+    width: 442px;
+}
+.roulette-table .wheel-container .winning-status {
+    position: absolute;
+    top: 278px;
+    width: 442px;
+}
+.roulette-table .wheel-container .winning-status span{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.roulette-table .wheel-container .bet-and-price span{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+.roulette-table .wheel-container img{
+    width:420px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.dozen, .low-or-high, .odd-numbers, #five-number, .zero-number, .column {
+    background-color:darkgoldenrod;
+}
+.roulette-table .top-container .dozen {
+    width:144px;
+}
+.roulette-table .top-container .low-or-high,
+.roulette-table .top-container .odd-numbers,
+.roulette-table .top-container .red-or-black{
+    width: 219px;
+}
+.roulette-table .bottom-container .zero-number {
+    width:181px;
+}
+.roulette-table .bottom-container .red, #red{
+    background-color:red;
+}
+.roulette-table .bottom-container .black, #black{
+    background-color:black;
+}
+.roulette-table .bottom-container .column {
+    width:144px;
+}
+.roulette-table .split-bet {
+    background-color:gray;
+}
+.roulette-table .street-bet {
+    background-color:gold;
+    color:black;
+}
+.player-bet-log table{
+    border:solid white thin;
+    border-collapse:collapse;
+    color:white;
+}
+.player-bet-log table th{
+    background-color:black;
+    border:solid white thin;
+    height:24px;
+    padding-left:5px;
+    padding-right:5px;
+}
+.player-bet-log table td{
+    border:solid white thin;
+    height:24px;
+    padding-left:5px;
+    padding-right:5px;
+}

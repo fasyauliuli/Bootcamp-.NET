@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+</head>
+<body>
+
+<div class="contaianer">
+    <div class="header">
+        <span class="date">Tanggal Hari Ini: @DateTime.Today.ToString("dd MMMM yyy")</span>        
+        <p><img src="~/Image/logo.png" alt="roadRunner-logo" /><i>Beep beep! You don’t have to run faster than the coyote to get away. You just
+        have to run faster than the dude next to you.</i></p>
+    </div>
+    <div class="page">
+        <div class="body-con">
+            @RenderBody()
+        </div>
+        <div class="nav">
+            <span>@Html.ActionLink("Home", "Index", "Home")</span>
+            <span>@Html.ActionLink("Barang", "Index", "Barang")</span>
+            <span>@Html.ActionLink("Lokasi", "Index", "Lokasi")</span>
+            <span>@Html.ActionLink("Kategori", "Index", "Kategori")</span>
+            <span>@Html.ActionLink("Pembelian", "Index", "Pembelian")</span>
+            <span>@Html.ActionLink("Profit Harian", "Index", "ProfitHarian")</span>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Don’t worry be happy</p>
+    </div>
+</div>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

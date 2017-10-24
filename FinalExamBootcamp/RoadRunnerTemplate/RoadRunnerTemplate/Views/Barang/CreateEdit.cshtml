@@ -1,0 +1,38 @@
+﻿@model RoadRunnerTemplate.ViewModel.Barang.BarangCreateEditViewModel
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(m => m.ID)
+<table>
+    <tr>
+        <td>Nama Barang</td>
+        <td>@Html.TextBoxFor(m=>m.Nama)</td>
+    </tr>
+    <tr>
+        <td>Lokasi</td>
+        <td>@Html.DropDownListFor(m=>m.LokasiID,
+        Model.LokasiLookup.Select(lokasi => new SelectListItem
+        { Text = string.Format("Nomor Rak: {0}, Nomor Bay: {1}", lokasi.NomorRak,
+            lokasi.NomorBay), Value = lokasi.ID.ToString()
+        }), "Pilih Lokasi")
+        </td>
+    </tr>
+    <tr>
+        <td>Kategori</td>
+        <td>@Html.DropDownListFor(m=>m.KategoriID,
+        Model.KategoriLookup.Select(kategori => new SelectListItem
+        { Text = string.Format("{0}", kategori.Nama), Value = kategori.ID.ToString()
+        }), "Pilih Kategori")
+        </td>
+    </tr>
+    <tr>
+        <td>Harga Beli</td>
+        <td>@Html.TextBoxFor(m=>m.HargaBeli)</td>
+    </tr>
+    <tr>
+        <td>Harga Jual</td>
+        <td>@Html.TextBoxFor(m=>m.HargaJual)</td>
+    </tr>
+</table>
+    <button>Submit</button>
+}

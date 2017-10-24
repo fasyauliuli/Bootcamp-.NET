@@ -1,0 +1,64 @@
+﻿@model List<RoadRunnerTemplate.ViewModel.Barang.BarangViewModel>
+
+@{
+    ViewBag.Title = "Road Runner Project: Barang";
+    var grid = new WebGrid(Model, canPage: true, rowsPerPage: 3, selectionFieldName: "selectedRow", ajaxUpdateContainerId: "gridContent");
+}
+
+<h2>Barang</h2>
+
+<div class="sorting">
+    @using (Html.BeginForm("Filter", "Barang", FormMethod.Post))
+    {
+        foreach (var item in Model.ToList().Select( f => f.Kategori).Distinct())
+        {
+            <button class="button-kategori" value="@item" name="Kategori">@item</button>
+        }
+    }
+</div>
+
+<br />
+<div class="active">
+@Html.ActionLink("Tambah Barang Baru","Create")
+</div>
+
+@foreach( var item in Model)
+{    
+<div class="body-container">
+    <div class="box">
+        <div class="circle"></div>
+        <div class="detail">           
+            <div class="text"> Nama : @item.Nama</div>          
+            <div class="text"> Lokasi : @item.Lokasi</div>              
+            <div class="text"> Harga Jual : @item.HargaJual</div>
+            <div class="text"> Harga Beli : @item.HargaBeli</div>
+        </div>
+    </div>
+    <div class="action">@Html.ActionLink("Edit", "Edit", new { ID = item.ID })</div>
+    <div class="action">@Html.ActionLink("Delete", "Delete", new { ID = item.ID }, htmlAttributes: new { @class="btnDelete", dataID=item.ID})</div> 
+</div>
+}
+
+<script>
+    $(function () {
+        $(".btnDelete").click(function (e) {
+            var answer = confirm("Are you sure?");
+            e.preventDefault();
+            if (answer) {
+                $.ajax({
+                    type: "Post",
+                    data: { id: $(this).attr("dataID") },
+                    url: "@Url.Action("Delete")",
+
+                success: function (result) {
+                    alert(result);
+                    location.reload();
+                },
+                error: function () {
+                    alert("Error")
+                }
+            })
+            }
+        })
+    })
+</script>

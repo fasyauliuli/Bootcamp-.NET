@@ -1,0 +1,61 @@
+﻿@model RoadRunnerTemplate.ViewModel.Pembelian.PembelianDetailViewModel
+
+@{
+    ViewBag.Title = "Detail";
+}
+
+<h2>Detail Pembelian</h2>
+
+<table>
+    <tr>
+        <td>Pembelian Tanggal</td>
+        <td> : @Model.Tanggal.ToString("dd MMM yyyy")</td>
+    </tr>
+    <tr>
+        <td>Total Pembelian</td>
+        <td> : @Model.Total</td>
+    </tr>
+</table>
+
+<br />
+<div class="active">
+@Html.ActionLink("Tambah Detail Pembelian","Create","DetailPembelian")
+</div>
+
+@foreach (var item in Model.BarangLookup)
+{
+<table class="detail-pembelian">
+    <tr>
+        <td style="width: 180px">@item.Nama</td>
+        <td style="width: 140px">Lokasi: Nomor Rak @item.NomorRak</td>
+        <td style="width: 125px">, Nomor Bay @item.NomorBay</td>
+        <td style="width: 80px">@item.HargaJual</td>
+        <td style="width: 39px">@Html.ActionLink("Edit", "Edit", "DetailPembelian" , new { ID = item.ID })</td>
+        <td>@Html.ActionLink("Delete", "Delete", "DetailPembelian", new { ID = item.ID }, htmlAttributes: new { @class="btnDelete", dataID=item.ID})</td>
+    </tr>
+</table>
+}
+
+<script>
+    $(function () {
+        $(".btnDelete").click(function (e) {
+            var answer = confirm("Are you sure?");
+            e.preventDefault();
+            if (answer) {
+                $.ajax({
+                    type: "Post",
+                    data: { id: $(this).attr("dataID") },
+                    url: "@Url.Action("Delete")",
+
+                success: function (result) {
+                    alert(result);
+                    location.reload();
+                },
+                error: function () {
+                    alert("Error")
+                }
+            })
+            }
+        })
+    })
+</script>

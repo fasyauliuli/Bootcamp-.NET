@@ -1,0 +1,15 @@
+﻿@model RoadRunnerTemplate.ViewModel.Pembelian.PembelianCreateEditViewModel
+
+<h2>@ViewBag.Title</h2>
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(m=>m.ID)
+    
+    <table>
+        <tr>
+            <td>@Html.LabelFor(m=>m.Tanggal)</td>
+            <td>@Html.TextBoxFor(m => m.Tanggal, htmlAttributes: new { type="date" })</td>
+        </tr>
+    </table>
+    <button>Submit</button>
+}

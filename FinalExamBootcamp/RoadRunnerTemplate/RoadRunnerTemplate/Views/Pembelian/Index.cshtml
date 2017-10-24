@@ -1,0 +1,49 @@
+﻿@model List<RoadRunnerTemplate.ViewModel.Pembelian.PembelianViewModel>
+
+@{
+    ViewBag.Title = "Road Runner Project: Pembelian";
+}
+
+<h2>Pembelian</h2>
+
+<br />
+<div class="active">
+@Html.ActionLink("Tambah Data Pembelian","Create")
+</div>
+
+@foreach(var item in Model)
+{
+<table class="pembelian">
+    <tr>
+        <td style="width: 100px">@item.Tanggal.ToString("dd MMM yyy")</td>
+        <td style="width: 220px">Total Pembelian: Rp @item.Total</td>
+        <td class="action">@Html.ActionLink("Detail", "Detail", new { ID = item.ID })</td>
+        <td class="action">@Html.ActionLink("Edit", "Edit", new { ID = item.ID })</td>
+        <td class="action">@Html.ActionLink("Delete", "Delete", new { ID = item.ID }, htmlAttributes: new { @class="btnDelete", dataID=item.ID})</td>
+    </tr>
+</table>
+}
+
+<script>
+    $(function () {
+        $(".btnDelete").click(function (e) {
+            var answer = confirm("Are you sure?");
+            e.preventDefault();
+            if (answer) {
+                $.ajax({
+                    type: "Post",
+                    data: { id: $(this).attr("dataID") },
+                    url: "@Url.Action("Delete")",
+
+                success: function (result) {
+                    alert(result);
+                    location.reload();
+                },
+                error: function () {
+                    alert("Error")
+                }
+            })
+            }
+        })
+    })
+</script>

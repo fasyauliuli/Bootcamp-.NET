@@ -1,0 +1,15 @@
+﻿@model List<RoadRunnerTemplate.ViewModel.ProfitHarian.ProfitHarianViewModel>
+
+@{
+    ViewBag.Title = "Profit Harian";
+}
+
+<h2>Profit Harian</h2>
+
+@foreach(var item in Model)
+{
+<div class="profit">
+    <span>Tanggal: @item.Tanggal.ToString("dd MMM yyy")</span>
+    <span>, Total Profit: Rp @item.Profit</span>
+</div>
+}

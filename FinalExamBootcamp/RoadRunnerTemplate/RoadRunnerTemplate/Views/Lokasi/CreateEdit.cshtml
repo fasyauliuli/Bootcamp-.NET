@@ -1,0 +1,17 @@
+﻿@model RoadRunnerTemplate.ViewModel.Lokasi.LokasiCreateEditViewModel
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(m => m.ID)
+<table>
+    <tr>
+        <td>Nomor Rak</td>
+        <td>@Html.TextBoxFor(m=>m.NomorRak)</td>
+    </tr>
+    <tr>
+        <td>Nomor Bay</td>
+        <td>@Html.TextBoxFor(m=>m.NomorBay)</td>
+    </tr>
+</table>
+    <button>Submit</button>
+}

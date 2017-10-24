@@ -1,0 +1,83 @@
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Roulette\Roulette\bin\Roulette.dll.config
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Roulette\Roulette\bin\Roulette.dll
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Roulette\Roulette\bin\Roulette.pdb
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Roulette\Roulette\bin\Antlr3.Runtime.dll
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Roulette\Roulette\bin\EntityFramework.dll
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Roulette\Roulette\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Roulette\Roulette\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Roulette\Roulette\bin\Newtonsoft.Json.dll
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Roulette\Roulette\bin\System.Web.Mvc.dll
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Roulette\Roulette\bin\System.Web.Optimization.dll
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Roulette\Roulette\bin\System.Web.Providers.dll
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Roulette\Roulette\bin\System.Web.Razor.dll
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Roulette\Roulette\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Roulette\Roulette\bin\System.Web.WebPages.dll
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Roulette\Roulette\bin\System.Web.WebPages.Razor.dll
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Roulette\Roulette\bin\WebGrease.dll
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Roulette\Roulette\bin\EntityFramework.xml
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Roulette\Roulette\bin\Newtonsoft.Json.xml
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Roulette\Roulette\bin\System.Web.Mvc.xml
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Roulette\Roulette\bin\System.Web.Razor.xml
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Roulette\Roulette\bin\System.Web.WebPages.xml
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Roulette\Roulette\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Roulette\Roulette\bin\System.Web.WebPages.Razor.xml
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Roulette\Roulette\obj\Debug\Roulette.csprojResolveAssemblyReference.cache
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Roulette\Roulette\obj\Debug\Roulette.dll
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Roulette\Roulette\obj\Debug\Roulette.pdb
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Soal\Project\Roulette\Roulette\bin\Roulette.dll.config
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Soal\Project\Roulette\Roulette\bin\Roulette.dll
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Soal\Project\Roulette\Roulette\bin\Roulette.pdb
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Soal\Project\Roulette\Roulette\bin\Antlr3.Runtime.dll
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Soal\Project\Roulette\Roulette\bin\EntityFramework.dll
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Soal\Project\Roulette\Roulette\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Soal\Project\Roulette\Roulette\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Soal\Project\Roulette\Roulette\bin\Newtonsoft.Json.dll
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Soal\Project\Roulette\Roulette\bin\System.Web.Mvc.dll
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Soal\Project\Roulette\Roulette\bin\System.Web.Optimization.dll
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Soal\Project\Roulette\Roulette\bin\System.Web.Providers.dll
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Soal\Project\Roulette\Roulette\bin\System.Web.Razor.dll
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Soal\Project\Roulette\Roulette\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Soal\Project\Roulette\Roulette\bin\System.Web.WebPages.dll
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Soal\Project\Roulette\Roulette\bin\System.Web.WebPages.Razor.dll
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Soal\Project\Roulette\Roulette\bin\WebGrease.dll
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Soal\Project\Roulette\Roulette\bin\EntityFramework.xml
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Soal\Project\Roulette\Roulette\bin\Newtonsoft.Json.xml
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Soal\Project\Roulette\Roulette\bin\System.Web.Mvc.xml
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Soal\Project\Roulette\Roulette\bin\System.Web.Razor.xml
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Soal\Project\Roulette\Roulette\bin\System.Web.WebPages.xml
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Soal\Project\Roulette\Roulette\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Soal\Project\Roulette\Roulette\bin\System.Web.WebPages.Razor.xml
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Soal\Project\Roulette\Roulette\obj\Debug\Roulette.csprojResolveAssemblyReference.cache
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Soal\Project\Roulette\Roulette\obj\Debug\Roulette.dll
+C:\Users\Boby\Desktop\Generation 7\Day 4, Javascript 2\Roulette JS\Soal\Project\Roulette\Roulette\obj\Debug\Roulette.pdb
+C:\Users\user\Documents\html\Soal Exam\Project\Roulette\Roulette\bin\Roulette.dll
+C:\Users\user\Documents\html\Soal Exam\Project\Roulette\Roulette\bin\Roulette.pdb
+C:\Users\user\Documents\html\Soal Exam\Project\Roulette\Roulette\bin\Antlr3.Runtime.dll
+C:\Users\user\Documents\html\Soal Exam\Project\Roulette\Roulette\bin\EntityFramework.dll
+C:\Users\user\Documents\html\Soal Exam\Project\Roulette\Roulette\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\user\Documents\html\Soal Exam\Project\Roulette\Roulette\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\user\Documents\html\Soal Exam\Project\Roulette\Roulette\bin\Newtonsoft.Json.dll
+C:\Users\user\Documents\html\Soal Exam\Project\Roulette\Roulette\bin\System.Net.Http.Formatting.dll
+C:\Users\user\Documents\html\Soal Exam\Project\Roulette\Roulette\bin\System.Web.Http.dll
+C:\Users\user\Documents\html\Soal Exam\Project\Roulette\Roulette\bin\System.Web.Http.WebHost.dll
+C:\Users\user\Documents\html\Soal Exam\Project\Roulette\Roulette\bin\System.Web.Mvc.dll
+C:\Users\user\Documents\html\Soal Exam\Project\Roulette\Roulette\bin\System.Web.Optimization.dll
+C:\Users\user\Documents\html\Soal Exam\Project\Roulette\Roulette\bin\System.Web.Providers.dll
+C:\Users\user\Documents\html\Soal Exam\Project\Roulette\Roulette\bin\System.Web.Razor.dll
+C:\Users\user\Documents\html\Soal Exam\Project\Roulette\Roulette\bin\System.Web.WebPages.Deployment.dll
+C:\Users\user\Documents\html\Soal Exam\Project\Roulette\Roulette\bin\System.Web.WebPages.dll
+C:\Users\user\Documents\html\Soal Exam\Project\Roulette\Roulette\bin\System.Web.WebPages.Razor.dll
+C:\Users\user\Documents\html\Soal Exam\Project\Roulette\Roulette\bin\WebGrease.dll
+C:\Users\user\Documents\html\Soal Exam\Project\Roulette\Roulette\bin\EntityFramework.xml
+C:\Users\user\Documents\html\Soal Exam\Project\Roulette\Roulette\bin\Newtonsoft.Json.xml
+C:\Users\user\Documents\html\Soal Exam\Project\Roulette\Roulette\bin\System.Net.Http.Formatting.xml
+C:\Users\user\Documents\html\Soal Exam\Project\Roulette\Roulette\bin\System.Web.Http.xml
+C:\Users\user\Documents\html\Soal Exam\Project\Roulette\Roulette\bin\System.Web.Http.WebHost.xml
+C:\Users\user\Documents\html\Soal Exam\Project\Roulette\Roulette\bin\System.Web.Mvc.xml
+C:\Users\user\Documents\html\Soal Exam\Project\Roulette\Roulette\bin\System.Web.Razor.xml
+C:\Users\user\Documents\html\Soal Exam\Project\Roulette\Roulette\bin\System.Web.WebPages.xml
+C:\Users\user\Documents\html\Soal Exam\Project\Roulette\Roulette\bin\System.Web.WebPages.Deployment.xml
+C:\Users\user\Documents\html\Soal Exam\Project\Roulette\Roulette\bin\System.Web.WebPages.Razor.xml
+C:\Users\user\Documents\html\Soal Exam\Project\Roulette\Roulette\obj\Debug\Roulette.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\html\Soal Exam\Project\Roulette\Roulette\obj\Debug\Roulette.dll
+C:\Users\user\Documents\html\Soal Exam\Project\Roulette\Roulette\obj\Debug\Roulette.pdb

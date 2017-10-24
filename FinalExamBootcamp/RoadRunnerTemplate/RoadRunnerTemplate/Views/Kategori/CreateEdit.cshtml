@@ -1,0 +1,13 @@
+﻿@model RoadRunnerTemplate.ViewModel.Kategori.KategoriCreateEditViewModel
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(m => m.ID)
+<table>
+    <tr>
+        <td>Nama Kategori</td>
+        <td>@Html.TextBoxFor(m=>m.Nama)</td>
+    </tr>
+</table>
+    <button>Submit</button>
+}

@@ -1,0 +1,246 @@
+﻿body {
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #000000;
+    width: 1024px;
+    margin: auto;
+}
+
+header, footer, nav, section {
+    display: block;
+}
+
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+
+/*Style for CSS container*/
+.container {
+    position: relative;
+}
+
+.header {
+    background-color : #00652d;
+    color : white;
+    position: relative
+}
+
+.date {
+    position: absolute;
+    right: 12px;
+    margin: 0;
+    padding-top: 8px;
+}
+
+.header p {
+    padding: 10px;
+}
+
+p i {
+    margin-left: 15px;
+}
+
+img {
+    width: 125px;
+}
+
+.page {
+    position: relative;
+    margin-top: -14px;
+}
+
+.nav {
+    background-color: #656565;
+    height: 530px;
+    position: absolute;
+    top: 0;
+    width: 17%;
+}
+
+.nav span {
+    display: block;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.nav span:hover {
+    background-color: #343434;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.body-con {
+    padding: 15px;
+    background-color: #ffffff;
+    position: relative;
+    left: 174px;
+    height: 500px;
+    width: 820px
+}
+
+h2 {
+    margin: 0;
+}
+
+.body-con p {
+    text-align: justify;
+}
+
+.footer {
+    background-color: #00652d;
+    color: white;
+    text-align: right;
+    padding: 10px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.box {
+    background-color: #343434;
+    height: 85px;
+    position: relative;
+}
+
+.circle {
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 13px;
+    left: 14px;
+    border-radius: 30px;
+}
+
+.detail {
+    position: absolute;
+    left: 91px;
+    top: 5px;
+    color: white;
+}
+
+.action {
+    display: inline;
+    margin-right: 8px;
+}
+
+.action a {
+    text-decoration: none;
+    background-color: #656565;
+    color: white;
+    padding: 5px;
+}
+
+.body-container {
+    margin-top: 13px;
+}
+
+.active a {
+    padding: 6px;
+    color: white;
+    background-color: #656565;
+    text-decoration: none
+}
+
+.table {
+    margin-top: 12px;
+}
+
+.table a {
+    text-decoration: none;
+    color: black;
+}
+
+.active {
+    margin-bottom: 20px;
+}
+
+.pembelian {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.pembelian span {
+    padding-right: 31px;
+}
+
+.pembelian span a {
+    text-decoration: none;
+    background-color: #656565;
+    color: white;
+    padding: 2px;
+}
+
+.detail-pembelian {
+    margin: 0;
+}
+
+.detail-pembelian td a {
+    text-decoration: none;
+    background-color: #656565;
+    color: white;
+    padding: 2px;
+}
+
+.profit {
+    margin: 15px;
+    margin-left: 0;
+}
+
+.button-kategori {
+    margin-top: 11px;
+    margin-right: 6px;
+}

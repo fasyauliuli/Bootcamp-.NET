@@ -1,0 +1,17 @@
+﻿@model RoadRunnerTemplate.ViewModel.Pembelian.PembelianDetailCreateEditViewModel
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(m => m.ID)
+<table>
+    <tr>
+        <td>Barang</td>
+        <td>@Html.DropDownListFor(m=>m.BarangID,
+        Model.BarangLookup.Select(detil => new SelectListItem
+        { Text = string.Format("{0}", detil.Nama ), Value = detil.ID.ToString()
+        }), "Pilih Barang")
+        </td>
+    </tr>
+</table>
+    <button>Submit</button>
+}

@@ -1,0 +1,55 @@
+﻿@model List<RoadRunnerTemplate.ViewModel.Lokasi.LokasiViewModel>
+
+@{
+    ViewBag.Title = "Road Runner Project: Lokasi";
+    var grid = new WebGrid(Model, canPage: true, rowsPerPage: 8, selectionFieldName: "selectedRow", ajaxUpdateContainerId: "gridContent");
+}
+
+<h2>Lokasi</h2>
+
+<br />
+<div class="active">
+@Html.ActionLink("Tambah Lokasi Baru","Create")
+</div>
+
+<div class="table">
+@{
+    @grid.GetHtml(tableStyle: "webGrid",
+        columns: grid.Columns(
+        grid.Column("NomorRak", "Nomor Rak"),
+        grid.Column("NomorBay", "Nomor Bay"),
+        grid.Column("ID", "Action",
+            item => {
+                var links = Html.ActionLink("Edit", "Edit", new { ID = item.ID }) + " | " +
+                    Html.ActionLink("Delete", "Delete", new { ID = item.ID }, htmlAttributes: new { @class="btnDelete", dataID=item.ID});
+                return Html.Raw(links); 
+            }
+        )
+        )
+    )
+}
+</div>
+
+<script>
+    $(function () {
+        $(".btnDelete").click(function (e) {
+            var answer = confirm("Are you sure?");
+            e.preventDefault();
+            if (answer) {
+                $.ajax({
+                    type: "Post",
+                    data: { id: $(this).attr("dataID") },
+                    url: "@Url.Action("Delete")",
+
+                success: function (result) {
+                    alert(result);
+                    location.reload();
+                },
+                error: function () {
+                    alert("Error")
+                }
+            })
+            }
+        })
+    })
+</script>

@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DomainModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="2.0.0.0" name="EntitiesModel" namespace="RoadRunnerTemplate.DataAccess" showPropertiesCompartment="true" xmlns="http://www.telerik.com/ORM">
+  <orm:orm name="EntitiesModel" backend="mssql" default-schema="dbo" xmlns:orm="http://tempuri.org/ORM">
+    <orm:namespace name="RoadRunnerTemplate.DataAccess" default="true">
+      <orm:class name="Pembelian" uniqueId="c14f8d69-c514-4cd3-9a1e-4d61b454fb16">
+        <orm:table name="Pembelian" />
+        <orm:identity>
+          <orm:key-generator name="autoinc">
+            <orm:key-generator-member property-name="ID" />
+          </orm:key-generator>
+          <orm:single-field field-name="_iD" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_iD" property="ID" behavior="readwrite" uniqueId="e1dd3dab-980b-4675-9b13-1fe297ce32f4" type="System.Int32">
+          <orm:column name="ID" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_tanggalPembelian" property="TanggalPembelian" behavior="readwrite" uniqueId="631a3cc3-0088-49a5-9a0c-3ce2dd33042d" type="System.DateTime">
+          <orm:column name="TanggalPembelian" sql-type="datetime" nullable="false" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_detilPembelians" property="DetilPembelians" behavior="readwrite" uniqueId="1eb267d6-038e-46b9-9af9-9bbb4af9197f" type="RoadRunnerTemplate.DataAccess.DetilPembelian">
+          <orm:collection element-class="RoadRunnerTemplate.DataAccess.DetilPembelian" inverse-field="_pembelian" order-by="" uniqueId="525d2dd8-6f67-4810-a462-3c54e9fa435c" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="Lokasi" uniqueId="f8dd6249-831a-48a0-9bbb-a1682dcd7a97">
+        <orm:table name="Lokasi" />
+        <orm:identity>
+          <orm:key-generator name="autoinc">
+            <orm:key-generator-member property-name="ID" />
+          </orm:key-generator>
+          <orm:single-field field-name="_iD" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_iD" property="ID" behavior="readwrite" uniqueId="f5d768a7-267c-43e9-9213-481dcbfa749b" type="System.Int32">
+          <orm:column name="ID" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_nomorRak" property="NomorRak" behavior="readwrite" uniqueId="94e9cf1d-aaea-46a9-b75d-b05c76648532" type="System.String">
+          <orm:column name="NomorRak" sql-type="varchar" nullable="false" length="10" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_nomorBay" property="NomorBay" behavior="readwrite" uniqueId="410ca050-34e3-4187-af40-026f4a92e3c1" type="System.String">
+          <orm:column name="NomorBay" sql-type="varchar" nullable="false" length="10" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_barangs" property="Barangs" behavior="readwrite" uniqueId="6c80e6f3-9b5d-4d04-a4ac-669e2145897f" type="RoadRunnerTemplate.DataAccess.Barang">
+          <orm:collection element-class="RoadRunnerTemplate.DataAccess.Barang" inverse-field="_lokasi" order-by="" uniqueId="511b86cd-7a4d-4f7e-aa59-ad6d9446020a" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="Kategori" uniqueId="cc1ef61d-da0e-40c1-a8e3-2b7f20b2226f">
+        <orm:table name="Kategori" />
+        <orm:identity>
+          <orm:key-generator name="autoinc">
+            <orm:key-generator-member property-name="ID" />
+          </orm:key-generator>
+          <orm:single-field field-name="_iD" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_iD" property="ID" behavior="readwrite" uniqueId="0f9bf338-5db9-4e03-8579-68835a8b2bc6" type="System.Int32">
+          <orm:column name="ID" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_nama" property="Nama" behavior="readwrite" uniqueId="5c5d850f-ba67-49f9-b52f-d1caf6198a3a" type="System.String">
+          <orm:column name="Nama" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_barangs" property="Barangs" behavior="readwrite" uniqueId="e75d60f8-cb45-4481-a753-09a4aac4cae2" type="RoadRunnerTemplate.DataAccess.Barang">
+          <orm:collection element-class="RoadRunnerTemplate.DataAccess.Barang" inverse-field="_kategori" order-by="" uniqueId="8581ecaf-9b8f-4f86-9231-5234a448d626" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="DetilPembelian" uniqueId="e110efb1-8603-49b4-b4fa-3d0926200584">
+        <orm:table name="DetilPembelian" />
+        <orm:identity>
+          <orm:key-generator name="autoinc">
+            <orm:key-generator-member property-name="ID" />
+          </orm:key-generator>
+          <orm:single-field field-name="_iD" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_iD" property="ID" behavior="readwrite" uniqueId="4d5fe0f6-558e-47a2-b0c4-4beca3952dcb" type="System.Int32">
+          <orm:column name="ID" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_barangID" property="BarangID" behavior="readwrite" uniqueId="857dd722-f18b-4de8-911e-ba78b1e3d1e5" type="System.Int32">
+          <orm:column name="BarangID" sql-type="int" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_orderQty" property="OrderQty" behavior="readwrite" uniqueId="85b8412a-5b53-4372-9c63-b1cca661d593" type="System.Int32">
+          <orm:column name="OrderQty" sql-type="int" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_pembelianID" property="PembelianID" behavior="readwrite" uniqueId="e03558bc-099a-4207-9a10-fe02d75fcf1f" type="System.Int32">
+          <orm:column name="PembelianID" sql-type="int" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_barang" property="Barang" behavior="readwrite" uniqueId="59cd3ae4-07e8-425a-b9f9-b90ed8bf68c4" type="RoadRunnerTemplate.DataAccess.Barang">
+          <orm:reference uniqueId="22986c46-ce2c-4c0d-95f0-883b29b43375" association-name="DetilPembelianHasBarang">
+            <orm:sharedfield name="_barangID" target-class="RoadRunnerTemplate.DataAccess.Barang" target-field="_iD" />
+            <orm:constraint name="FK_DetilPembelian_Barang" delete-action="dbdefaultrule" destination-table="Barang" />
+          </orm:reference>
+        </orm:field>
+        <orm:field name="_pembelian" property="Pembelian" behavior="readwrite" uniqueId="19bf0c65-dea6-48de-9aac-e594a1873fc0" type="RoadRunnerTemplate.DataAccess.Pembelian">
+          <orm:reference uniqueId="525d2dd8-6f67-4810-a462-3c54e9fa435c" association-name="DetilPembelianHasPembelian">
+            <orm:sharedfield name="_pembelianID" target-class="RoadRunnerTemplate.DataAccess.Pembelian" target-field="_iD" />
+            <orm:constraint name="FK_DetilPembelian_Pembelian" delete-action="dbdefaultrule" destination-table="Pembelian" />
+          </orm:reference>
+        </orm:field>
+      </orm:class>
+      <orm:class name="Barang" uniqueId="b594c90d-341c-4373-bdf3-346dc7f32a2e">
+        <orm:table name="Barang" />
+        <orm:identity>
+          <orm:single-field field-name="_iD" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_iD" property="ID" behavior="readwrite" uniqueId="f1e17216-4aae-4d3d-9b0b-61e7b3961295" type="System.Int32">
+          <orm:column name="ID" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_nama" property="Nama" behavior="readwrite" uniqueId="3df78000-a116-4f6d-97ff-11079e150b36" type="System.String">
+          <orm:column name="Nama" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_hargaBeli" property="HargaBeli" behavior="readwrite" uniqueId="9cc8dcef-cbab-42a0-8fc2-0677e72da1a6" type="System.Decimal">
+          <orm:column name="HargaBeli" sql-type="money" nullable="false" length="0" scale="0" ado-type="Currency" />
+        </orm:field>
+        <orm:field name="_hargaJual" property="HargaJual" behavior="readwrite" uniqueId="13f3526a-ea8f-46b6-b0a0-2d9dad15c07d" type="System.Decimal">
+          <orm:column name="HargaJual" sql-type="money" nullable="false" length="0" scale="0" ado-type="Currency" />
+        </orm:field>
+        <orm:field name="_kategoriID" property="KategoriID" behavior="readwrite" uniqueId="358ca5dc-9078-4769-941d-e59d6112873c" type="System.Int32">
+          <orm:column name="KategoriID" sql-type="int" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_lokasiID" property="LokasiID" behavior="readwrite" uniqueId="89aad1ea-28eb-4570-8340-7d0d0e13a0d1" type="System.Int32">
+          <orm:column name="LokasiID" sql-type="int" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_detilPembelians" property="DetilPembelians" behavior="readwrite" uniqueId="75b58a53-849f-4732-9778-80b42a9d6615" type="RoadRunnerTemplate.DataAccess.DetilPembelian">
+          <orm:collection element-class="RoadRunnerTemplate.DataAccess.DetilPembelian" inverse-field="_barang" order-by="" uniqueId="22986c46-ce2c-4c0d-95f0-883b29b43375" />
+        </orm:field>
+        <orm:field name="_kategori" property="Kategori" behavior="readwrite" uniqueId="64c4b206-35ae-4995-a141-2b644ac69025" type="RoadRunnerTemplate.DataAccess.Kategori">
+          <orm:reference uniqueId="8581ecaf-9b8f-4f86-9231-5234a448d626" association-name="BarangHasKategori">
+            <orm:sharedfield name="_kategoriID" target-class="RoadRunnerTemplate.DataAccess.Kategori" target-field="_iD" />
+            <orm:constraint name="FK_Barang_Kategori" delete-action="dbdefaultrule" destination-table="Kategori" />
+          </orm:reference>
+        </orm:field>
+        <orm:field name="_lokasi" property="Lokasi" behavior="readwrite" uniqueId="33ff5787-9978-44b1-ad0e-64e3bd7ed35c" type="RoadRunnerTemplate.DataAccess.Lokasi">
+          <orm:reference uniqueId="511b86cd-7a4d-4f7e-aa59-ad6d9446020a" association-name="BarangHasLokasi">
+            <orm:sharedfield name="_lokasiID" target-class="RoadRunnerTemplate.DataAccess.Lokasi" target-field="_iD" />
+            <orm:constraint name="FK_Barang_Lokasi" delete-action="dbdefaultrule" destination-table="Lokasi" />
+          </orm:reference>
+        </orm:field>
+      </orm:class>
+    </orm:namespace>
+    <orm:schema schema="">
+      <orm:table name="Pembelian">
+        <orm:column name="ID" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        <orm:column name="TanggalPembelian" sql-type="datetime" nullable="false" length="0" scale="0" ado-type="DateTime" />
+      </orm:table>
+      <orm:table name="Lokasi">
+        <orm:column name="ID" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        <orm:column name="NomorRak" sql-type="varchar" nullable="false" length="10" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="NomorBay" sql-type="varchar" nullable="false" length="10" scale="0" ado-type="StringVariableLength" />
+      </orm:table>
+      <orm:table name="Kategori">
+        <orm:column name="ID" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        <orm:column name="Nama" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="StringVariableLength" />
+      </orm:table>
+      <orm:table name="DetilPembelian">
+        <orm:column name="ID" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        <orm:column name="BarangID" sql-type="int" nullable="false" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="OrderQty" sql-type="int" nullable="false" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="PembelianID" sql-type="int" nullable="false" length="0" scale="0" ado-type="Int32" />
+        <orm:constraint name="FK_DetilPembelian_Barang" delete-action="dbdefaultrule" destination-table="Barang">
+          <orm:column name="BarangID" sql-type="int" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:constraint>
+        <orm:constraint name="FK_DetilPembelian_Pembelian" delete-action="dbdefaultrule" destination-table="Pembelian">
+          <orm:column name="PembelianID" sql-type="int" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:constraint>
+      </orm:table>
+      <orm:table name="Barang">
+        <orm:column name="ID" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        <orm:column name="Nama" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="HargaBeli" sql-type="money" nullable="false" length="0" scale="0" ado-type="Currency" />
+        <orm:column name="HargaJual" sql-type="money" nullable="false" length="0" scale="0" ado-type="Currency" />
+        <orm:column name="KategoriID" sql-type="int" nullable="false" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="LokasiID" sql-type="int" nullable="false" length="0" scale="0" ado-type="Int32" />
+        <orm:constraint name="FK_Barang_Kategori" delete-action="dbdefaultrule" destination-table="Kategori">
+          <orm:column name="KategoriID" sql-type="int" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:constraint>
+        <orm:constraint name="FK_Barang_Lokasi" delete-action="dbdefaultrule" destination-table="Lokasi">
+          <orm:column name="LokasiID" sql-type="int" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:constraint>
+      </orm:table>
+    </orm:schema>
+    <orm:relational-naming-settings>
+      <orm:source-strategy>Property</orm:source-strategy>
+      <orm:remove-camel-case>False</orm:remove-camel-case>
+    </orm:relational-naming-settings>
+  </orm:orm>
+  <ModelSettings xmlns="">
+    <AppConfigConnectionPropertyName>RoadRunnerConnection</AppConfigConnectionPropertyName>
+    <AppConfigConnectionString>Data Source=DESKTOP-RNUKNIK;Initial Catalog=RoadRunner;Integrated Security=True</AppConfigConnectionString>
+    <InitialCatalog>RoadRunner</InitialCatalog>
+    <NamingSettings>
+      <ClassRules>
+        <CaseMode>PascalCase</CaseMode>
+        <PluralizationMode>Singularize</PluralizationMode>
+      </ClassRules>
+      <FieldRules>
+        <AddPrefix>_</AddPrefix>
+        <CaseMode>CamelCase</CaseMode>
+      </FieldRules>
+      <PropertyRules>
+        <CaseMode>PascalCase</CaseMode>
+      </PropertyRules>
+      <NavigationPropertyRules />
+    </NamingSettings>
+    <CodeGenerationSettings>
+      <MappingDefinitionType>Xml</MappingDefinitionType>
+    </CodeGenerationSettings>
+    <SchemaUpdateSettings />
+    <BackendConfigurationSettings>
+      <BackendConfiguration>
+        <Backend>MsSql</Backend>
+        <ProviderName>System.Data.SqlClient</ProviderName>
+      </BackendConfiguration>
+    </BackendConfigurationSettings>
+  </ModelSettings>
+  <Types>
+    <DomainClass Id="c14f8d69-c514-4cd3-9a1e-4d61b454fb16" name="Pembelian" namespace="RoadRunnerTemplate.DataAccess" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true" identityMechanismMember="ID">
+      <Property Id="e1dd3dab-980b-4675-9b13-1fe297ce32f4" name="ID" type="Int32" label="ID : Int32" kind="Persistent" identity="true" fieldName="_iD" />
+      <Property Id="631a3cc3-0088-49a5-9a0c-3ce2dd33042d" name="TanggalPembelian" type="DateTime" label="TanggalPembelian : DateTime" kind="Persistent" fieldName="_tanggalPembelian" />
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="8f07438a-e79c-4b03-87a8-848270573f95">
+          <NavigationalProperty Id="1eb267d6-038e-46b9-9af9-9bbb4af9197f" name="DetilPembelians" type="IList&lt;DetilPembelian&gt;" label="DetilPembelians : IList&lt;DetilPembelian&gt;" nullable="true" kind="Persistent" fieldName="_detilPembelians" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="f8dd6249-831a-48a0-9bbb-a1682dcd7a97" name="Lokasi" namespace="RoadRunnerTemplate.DataAccess" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true" identityMechanismMember="ID">
+      <Property Id="f5d768a7-267c-43e9-9213-481dcbfa749b" name="ID" type="Int32" label="ID : Int32" kind="Persistent" identity="true" fieldName="_iD" />
+      <Property Id="410ca050-34e3-4187-af40-026f4a92e3c1" name="NomorBay" label="NomorBay : String" kind="Persistent" fieldName="_nomorBay" />
+      <Property Id="94e9cf1d-aaea-46a9-b75d-b05c76648532" name="NomorRak" label="NomorRak : String" kind="Persistent" fieldName="_nomorRak" />
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="bd9e8f4f-81e6-421a-a2f6-8fa0b7d9286e">
+          <NavigationalProperty Id="6c80e6f3-9b5d-4d04-a4ac-669e2145897f" name="Barangs" type="IList&lt;Barang&gt;" label="Barangs : IList&lt;Barang&gt;" nullable="true" kind="Persistent" fieldName="_barangs" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="cc1ef61d-da0e-40c1-a8e3-2b7f20b2226f" name="Kategori" namespace="RoadRunnerTemplate.DataAccess" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true" identityMechanismMember="ID">
+      <Property Id="0f9bf338-5db9-4e03-8579-68835a8b2bc6" name="ID" type="Int32" label="ID : Int32" kind="Persistent" identity="true" fieldName="_iD" />
+      <Property Id="5c5d850f-ba67-49f9-b52f-d1caf6198a3a" name="Nama" label="Nama : String" kind="Persistent" fieldName="_nama" />
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="24198d8a-fb64-4073-8c7e-b01de9b2fd05">
+          <NavigationalProperty Id="e75d60f8-cb45-4481-a753-09a4aac4cae2" name="Barangs" type="IList&lt;Barang&gt;" label="Barangs : IList&lt;Barang&gt;" nullable="true" kind="Persistent" fieldName="_barangs" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="e110efb1-8603-49b4-b4fa-3d0926200584" name="DetilPembelian" namespace="RoadRunnerTemplate.DataAccess" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true" identityMechanismMember="ID">
+      <Property Id="4d5fe0f6-558e-47a2-b0c4-4beca3952dcb" name="ID" type="Int32" label="ID : Int32" kind="Persistent" identity="true" fieldName="_iD" />
+      <Property Id="857dd722-f18b-4de8-911e-ba78b1e3d1e5" name="BarangID" type="Int32" label="BarangID : Int32" kind="Persistent" fieldName="_barangID" />
+      <Property Id="85b8412a-5b53-4372-9c63-b1cca661d593" name="OrderQty" type="Int32" label="OrderQty : Int32" kind="Persistent" fieldName="_orderQty" />
+      <Property Id="e03558bc-099a-4207-9a10-fe02d75fcf1f" name="PembelianID" type="Int32" label="PembelianID : Int32" kind="Persistent" fieldName="_pembelianID" />
+      <AssociationTargets>
+        <Association Id="22986c46-ce2c-4c0d-95f0-883b29b43375" SourceMultiplicity="One" name="DetilPembelianHasBarang">
+          <DomainClassMoniker name="/EntitiesModel/Barang" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="d28dd154-10f0-4cfa-909f-3419dedb2686">
+              <NavigationalPropertyMoniker name="/EntitiesModel/Barang/DetilPembelians" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="e78c6143-6cf6-4061-b72b-f75ea13bc4fc">
+              <NavigationalPropertyMoniker name="/EntitiesModel/DetilPembelian/Barang" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+        <Association Id="525d2dd8-6f67-4810-a462-3c54e9fa435c" SourceMultiplicity="One" name="DetilPembelianHasPembelian">
+          <DomainClassMoniker name="/EntitiesModel/Pembelian" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="714ff631-3048-41e0-90ed-cc8bbcf009c4">
+              <NavigationalPropertyMoniker name="/EntitiesModel/Pembelian/DetilPembelians" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="2aafb405-666b-47d9-9e99-9e1a400f0e84">
+              <NavigationalPropertyMoniker name="/EntitiesModel/DetilPembelian/Pembelian" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+      </AssociationTargets>
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="adcf2651-bd94-4e47-892b-6e925c9f5f48">
+          <NavigationalProperty Id="59cd3ae4-07e8-425a-b9f9-b90ed8bf68c4" name="Barang" type="Barang" label="Barang : Barang" nullable="true" kind="Persistent" fieldName="_barang" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="2ec80f5f-c9f2-40f5-96e3-c607858cb9c0">
+          <NavigationalProperty Id="19bf0c65-dea6-48de-9aac-e594a1873fc0" name="Pembelian" type="Pembelian" label="Pembelian : Pembelian" nullable="true" kind="Persistent" fieldName="_pembelian" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="b594c90d-341c-4373-bdf3-346dc7f32a2e" name="Barang" namespace="RoadRunnerTemplate.DataAccess" showPropertiesCompartment="true" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="f1e17216-4aae-4d3d-9b0b-61e7b3961295" name="ID" type="Int32" label="ID : Int32" kind="Persistent" identity="true" fieldName="_iD" />
+      <Property Id="9cc8dcef-cbab-42a0-8fc2-0677e72da1a6" name="HargaBeli" type="Decimal" label="HargaBeli : Decimal" kind="Persistent" fieldName="_hargaBeli" />
+      <Property Id="13f3526a-ea8f-46b6-b0a0-2d9dad15c07d" name="HargaJual" type="Decimal" label="HargaJual : Decimal" kind="Persistent" fieldName="_hargaJual" />
+      <Property Id="358ca5dc-9078-4769-941d-e59d6112873c" name="KategoriID" type="Int32" label="KategoriID : Int32" kind="Persistent" fieldName="_kategoriID" />
+      <Property Id="89aad1ea-28eb-4570-8340-7d0d0e13a0d1" name="LokasiID" type="Int32" label="LokasiID : Int32" kind="Persistent" fieldName="_lokasiID" />
+      <Property Id="3df78000-a116-4f6d-97ff-11079e150b36" name="Nama" label="Nama : String" kind="Persistent" fieldName="_nama" />
+      <AssociationTargets>
+        <Association Id="8581ecaf-9b8f-4f86-9231-5234a448d626" SourceMultiplicity="One" name="BarangHasKategori">
+          <DomainClassMoniker name="/EntitiesModel/Kategori" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="a7c2fbd8-c8c9-41f3-a86a-f792268c3083">
+              <NavigationalPropertyMoniker name="/EntitiesModel/Kategori/Barangs" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="f52af702-5dc7-44e5-951b-d20583f5f9d5">
+              <NavigationalPropertyMoniker name="/EntitiesModel/Barang/Kategori" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+        <Association Id="511b86cd-7a4d-4f7e-aa59-ad6d9446020a" SourceMultiplicity="One" name="BarangHasLokasi">
+          <DomainClassMoniker name="/EntitiesModel/Lokasi" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="1586b40a-20f1-4c78-bf87-bf35dd996ab6">
+              <NavigationalPropertyMoniker name="/EntitiesModel/Lokasi/Barangs" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="fd6a875a-3ada-4da8-a560-d57576446879">
+              <NavigationalPropertyMoniker name="/EntitiesModel/Barang/Lokasi" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+      </AssociationTargets>
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="eb3bc706-c374-4b39-87dd-4669ea0f2ab9">
+          <NavigationalProperty Id="75b58a53-849f-4732-9778-80b42a9d6615" name="DetilPembelians" type="IList&lt;DetilPembelian&gt;" label="DetilPembelians : IList&lt;DetilPembelian&gt;" nullable="true" kind="Persistent" fieldName="_detilPembelians" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="c2ca8fa0-6173-44f2-b901-7c24e658c0c3">
+          <NavigationalProperty Id="64c4b206-35ae-4995-a141-2b644ac69025" name="Kategori" type="Kategori" label="Kategori : Kategori" nullable="true" kind="Persistent" fieldName="_kategori" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="69c70d75-dd75-4d0c-a1fe-258815afc564">
+          <NavigationalProperty Id="33ff5787-9978-44b1-ad0e-64e3bd7ed35c" name="Lokasi" type="Lokasi" label="Lokasi : Lokasi" nullable="true" kind="Persistent" fieldName="_lokasi" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+  </Types>
+  <domainContext>
+    <domainModelHasDomainContext Id="f0ed54ba-5fdb-4b64-8de6-5aa46ab76ca2">
+      <domainContainer name="EntitiesModel" namespace="RoadRunnerTemplate.DataAccess" showPropertiesCompartment="true">
+        <entitySetProperty name="Pembelians" namespace="RoadRunnerTemplate.DataAccess" type="Pembelian" label="Pembelians : IQueryable&lt;RoadRunnerTemplate.DataAccess.Pembelian&gt;" />
+        <entitySetProperty name="Lokasis" namespace="RoadRunnerTemplate.DataAccess" type="Lokasi" label="Lokasis : IQueryable&lt;RoadRunnerTemplate.DataAccess.Lokasi&gt;" />
+        <entitySetProperty name="Kategoris" namespace="RoadRunnerTemplate.DataAccess" type="Kategori" label="Kategoris : IQueryable&lt;RoadRunnerTemplate.DataAccess.Kategori&gt;" />
+        <entitySetProperty name="DetilPembelians" namespace="RoadRunnerTemplate.DataAccess" type="DetilPembelian" label="DetilPembelians : IQueryable&lt;RoadRunnerTemplate.DataAccess.DetilPembelian&gt;" />
+        <entitySetProperty name="Barangs" namespace="RoadRunnerTemplate.DataAccess" type="Barang" label="Barangs : IQueryable&lt;RoadRunnerTemplate.DataAccess.Barang&gt;" />
+      </domainContainer>
+    </domainModelHasDomainContext>
+  </domainContext>
+</DomainModel>

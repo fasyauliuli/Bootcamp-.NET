@@ -1,0 +1,39 @@
+﻿
+{
+    "SU": {
+        "name": "straight up",
+        "payout": 35
+    },
+    "SP": {
+        "name": "split bet",
+        "payout": 17
+    },
+    "ST": {
+        "name": "street bet",
+        "payout": 11
+    },
+    "FN": {
+        "name": "five number",
+        "payout": 6
+    },
+    "CO": {
+        "name": "column",
+        "payout": 2
+    },
+    "DZ": {
+        "name": "dozen",
+        "payout": 2
+    },
+    "RB": {
+        "name": "red or black",
+        "payout": 1
+    },
+    "EO": {
+        "name": "event or odd",
+        "payout": 1
+    },
+    "LH":  {
+        "name": "low or high",
+        "payout": 1
+    }
+}
